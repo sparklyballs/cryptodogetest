@@ -11,8 +11,7 @@ cd /cryptodoge-blockchain || exit 1
 # shellcheck disable=SC1091
 . ./activate
 
-cryptodoge init
-# cryptodoge init --fix-ssl-permissions
+cryptodoge init --fix-ssl-permissions
 
 if [[ ${testnet} == 'true' ]]; then
    echo "configure testnet"
